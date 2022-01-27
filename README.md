@@ -1,6 +1,6 @@
 # tokio-notify-drop
 
-This is a rust library.
+This is a Rust library.
 
 Call Notify::notify_one() when object is dropped.
 
