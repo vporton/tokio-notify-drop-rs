@@ -1,3 +1,6 @@
+/// Call Notify::notify_one() when object is dropped.
+/// It's useful to use together with https://crates.io/crates/tokio-interruptible-future
+
 use tokio::sync::Notify;
 
 struct NotifyDrop<'a> {
