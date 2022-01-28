@@ -3,7 +3,7 @@
 
 use tokio::sync::Notify;
 
-struct NotifyDrop<'a> {
+pub struct NotifyDrop<'a> {
     notify: &'a Notify
 }
 
