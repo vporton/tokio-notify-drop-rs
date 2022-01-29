@@ -16,7 +16,7 @@ impl<'a> NotifyDrop<'a> {
 
 impl<'a> Drop for NotifyDrop<'a> {
     fn drop(&mut self) {
-        self.notify.notify_one();
+        self.notify.notify_waiters();
     }
 }
 
