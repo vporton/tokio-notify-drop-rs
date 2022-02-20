@@ -1,6 +1,6 @@
 [package]
 name = "tokio-notify-drop"
-version = "1.0.0"
+version = "2.0.0"
 edition = "2021"
 description = "Call Notify::notify_waiters() when object is dropped. It's useful to use together with https://crates.io/crates/tokio-interruptible-future"
 authors = ["Victor Porton"]
@@ -9,7 +9,8 @@ license = "Apache-2.0"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-tokio = { version = "1.15", features = ["sync"] }
+tokio = { version = "1.17.0", features = ["sync"] }
+tokio-interruptible-future = "5.0.0"
+futures = "0.3.19"
 
 [dev-dependencies]
-futures = "0.3.19"
